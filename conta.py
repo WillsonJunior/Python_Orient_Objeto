@@ -12,3 +12,6 @@ class Conta:
     self.saldo += valor
   def saca(self,valor):
     self.saldo -= valor
+def trans(self, valor, origem, destino):
+  origem.sacar(valor)
+  destino.deposita(valor)
