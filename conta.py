@@ -15,8 +15,21 @@ class Conta:
 
     def saca(self, valor):
         self.__saldo -= valor
-
+        
+#metodo de tranferencia entre contas
     def transfere(self, valor, destino):
         self.saca(valor)
         destino.deposita(valor)
+#metodo de para retornar saldo,limite e titular    
+    
+    def get_saldo(self):
+        return self.__saldo
+    def get_titular(self):
+        return self.__titular
+    def get__limite(self):
+        return self.__limite
+    
+#funções para modificar limiti
+    def set__limite(self, limite):
+        self.__limite= limite
 
