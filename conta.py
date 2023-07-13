@@ -26,10 +26,12 @@ class Conta:
         return self.__saldo
     def get_titular(self):
         return self.__titular
-    def get__limite(self):
+    @property
+    def limite(self):
         return self.__limite
     
 #funções para modificar limiti
-    def set__limite(self, limite):
+    @limite.setter
+    def limite(self, limite):
         self.__limite= limite
 
